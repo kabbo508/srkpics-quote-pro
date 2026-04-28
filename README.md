@@ -1,56 +1,332 @@
 # SRK Pics Quote Pro
 
-SRK Pics Quote Pro is a WooCommerce quote request plugin that hides product prices and replaces the standard purchase flow with a product-based quote request system.
+SRK Pics Quote Pro is a professional WooCommerce quote system that replaces pricing and checkout with a structured quote request workflow.
 
-## Features
+Built for real businesses, not demo setups.
 
-- Hide WooCommerce product prices globally
-- Disable Add to Cart and cart form
-- Show Request Quote button on:
+---
+
+## 🚀 Core Purpose
+
+Instead of showing prices and allowing checkout, this plugin:
+
+- Hides all product prices
+- Removes add-to-cart functionality
+- Adds a "Request Quote" system
+- Collects customer leads
+- Stores them in a CRM-style dashboard
+- Sends email notifications
+- Allows admin follow-up tracking
+
+---
+
+## ⚙️ Features Overview
+
+### Frontend
+
+- Hide all product prices globally
+- Disable cart, quantity, variations, and add-to-cart
+- Show "Request Quote" button on:
   - Shop page
-  - Product category pages
-  - Search result pages
-  - Product archive pages
-- Elementor shortcode support for single product pages
+  - Category page
+  - Search results
+  - Archive pages
 - Popup quote form
-- Auto-selected product name, image, and URL
-- Customer fields:
-  - Name
-  - Email
-  - Phone
-  - Message
-- Admin email notification
-- Customer confirmation email
-- Admin notification email setting
-- Modern admin quote dashboard
-- Inline quote status update
-- Status labels:
-  - New
-  - Waiting for Confirmation
-  - Call Done
-  - Quote Sent
-  - Closed
-  - Cancelled
-- Filter quotes by date and status
-- Export quote list as CSV
-- Live activity log
+- Automatically includes:
+  - Product name
+  - Product image
+  - Product URL
 
-## Shortcode
+---
 
-Use this shortcode inside the Elementor single product template:
+## 🧩 Elementor Support (Single Product)
 
-```text
+Single product pages are controlled manually.
+
+You must place the shortcode inside your Elementor template.
+
+---
+
+## 🔹 SHORTCODE USAGE
+
+Use the shortcode to display the quote button anywhere.
+
+---
+
+### Basic Usage (Recommended)
+
 [srk_quote_button]
 
-## Specific Shortcode
-Custom button text:
+- Automatically detects the current product
+- Best for Elementor single product template
+
+---
+
+### Custom Button Text
 
 [srk_quote_button text="Request a Quote"]
 
-For a specific product ID:
+Example:
+[srk_quote_button text="Get Price Now"]
+
+---
+
+### Specific Product (Optional)
 
 [srk_quote_button product_id="123"]
 
-Custom text with product ID:
+Use this when:
+- You are outside a product page
+- You want to display a quote button for a specific product
+- You are building landing pages or custom layouts
+
+---
+
+### Full Custom Example
 
 [srk_quote_button product_id="123" text="Ask for Price"]
+
+---
+
+### Important Notes
+
+- If `product_id` is not provided, the current product is used
+- If used outside a product page, `product_id` is required
+- Works inside Elementor Shortcode widget
+
+---
+
+## 🧩 Elementor Setup (Step-by-Step)
+
+1. Go to: Elementor → Theme Builder  
+2. Open: Single Product Template  
+3. Add: Shortcode widget  
+4. Paste:
+
+[srk_quote_button]
+
+5. Place it where needed:
+   - Below product title  
+   - Under description  
+   - Inside CTA section  
+
+6. Click Update  
+
+---
+
+## 🎯 Frontend Flow
+
+### Shop / Category Pages
+
+- Products are visible
+- Prices are hidden
+- No add-to-cart buttons
+- Only "Request Quote" button is shown
+
+---
+
+### Single Product Page
+
+- No price
+- No cart or purchase options
+- Only shortcode-based quote button
+
+---
+
+### Quote Interaction Flow
+
+When user clicks the button:
+
+Popup opens showing:
+- Product image
+- Product name
+- Product URL
+
+Form fields:
+- Name
+- Email
+- Phone
+- Message
+
+---
+
+### After Submission
+
+- User sees confirmation message
+- Admin receives email
+- Customer receives confirmation email
+- Data is stored in database
+- Activity log is updated
+
+---
+
+## 📩 Email System
+
+### Admin Email Includes
+
+- Product name
+- Product image
+- Product URL
+- Customer name
+- Email
+- Phone
+- Message
+
+---
+
+### Customer Email Includes
+
+- Confirmation message
+- Submitted details
+- Follow-up notice
+
+---
+
+## 🧠 Admin Dashboard
+
+Go to:
+
+Dashboard → Quote Pro → Quote Requests
+
+---
+
+### Dashboard Features
+
+- View all quote requests
+- Product preview (image + name)
+- Customer details
+- Message preview
+- Date tracking
+
+---
+
+### Status Management
+
+Admin can update quote status:
+
+- New
+- Waiting for Confirmation
+- Call Done
+- Quote Sent
+- Closed
+- Cancelled
+
+---
+
+### Filters
+
+- Filter by status
+- Filter by date range
+
+---
+
+### Export
+
+- Export all quote requests as CSV
+
+---
+
+## 📊 Activity Log
+
+Tracks:
+
+- New quote submissions
+- Email sending
+- Status updates
+- System actions
+
+Auto-refresh enabled
+
+---
+
+## ⚙️ Settings
+
+Go to:
+
+Dashboard → Quote Pro → Settings
+
+---
+
+### Available Settings
+
+- Admin notification email
+
+---
+
+## 🔒 What Gets Disabled
+
+- Product prices
+- Add to Cart button
+- Quantity fields
+- Variation purchase UI
+- Cart forms
+
+---
+
+## 💡 Best Practice
+
+- Use Elementor single product template
+- Place shortcode in a clear CTA position
+- Avoid hardcoding product IDs unless needed
+
+---
+
+## 📦 Installation
+
+1. Upload plugin ZIP  
+2. Activate plugin  
+3. Go to settings and set admin email  
+4. Add shortcode in Elementor template  
+5. Clear cache  
+
+---
+
+## 🧪 Troubleshooting
+
+### Button not showing
+
+- Ensure shortcode is added
+- Check Elementor template assignment
+- Clear cache
+
+---
+
+### Popup not opening
+
+- Check browser console
+- Disable conflicting popup plugins
+
+---
+
+### Email not sending
+
+- Configure SMTP
+- Use WP Mail SMTP plugin
+
+---
+
+## 🔁 Version
+
+Current Version: 1.3.0
+
+---
+
+## 👤 Author
+
+srkpics  
+https://srkpics.com/
+
+---
+
+## 📌 Summary
+
+This plugin transforms WooCommerce into a **lead generation system instead of a traditional checkout store**
+
+Ideal for:
+
+- Custom products  
+- B2B services  
+- High-ticket items  
+- Made-to-order businesses  
+
+---
