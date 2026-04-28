@@ -41,6 +41,8 @@ Use this shortcode inside the Elementor single product template:
 
 ```text
 [srk_quote_button]
+
+```text
 Custom button text:
 
 [srk_quote_button text="Request a Quote"]
