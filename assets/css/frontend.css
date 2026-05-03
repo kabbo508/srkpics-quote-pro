@@ -1,0 +1,285 @@
+/* Hide WooCommerce and common theme price/cart output */
+.woocommerce div.product p.price,
+.woocommerce div.product span.price,
+.woocommerce ul.products li.product .price,
+.woocommerce .price,
+.product .price,
+.product-price,
+.product__price,
+.product-item__price,
+.product_item--price,
+.product-item .price,
+.price-html,
+.amount,
+.woocommerce-Price-amount,
+.woocommerce-variation-price,
+.woocommerce div.product form.cart,
+.woocommerce div.product .cart,
+.single-product .cart,
+.single-product form.cart,
+.single-product .single_add_to_cart_button,
+.single-product .quantity {
+    display: none !important;
+}
+
+.product-item__description:empty,
+.product-item__description .price:empty,
+.woocommerce ul.products li.product .price:empty {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+}
+
+/* Button */
+.srkqp-quote-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 0;
+    background: #c47f20;
+    color: #fff !important;
+    padding: 13px 23px;
+    border-radius: 50px !important;
+    font-weight: 400;
+    line-height: 1.15;
+    cursor: pointer;
+    transition: .2s ease;
+    text-decoration: none !important;
+    min-height: auto;
+    width: auto;
+    clear: both;
+    font-size: 18px;
+}
+
+.srkqp-quote-btn:hover {
+    background: #111827;
+    transform: translateY(-1px);
+}
+
+.srkqp-loop-btn {
+    margin-top: 10px;
+}
+
+.product-item__description .srkqp-loop-btn,
+.woocommerce ul.products li.product .srkqp-loop-btn {
+    margin-top: 12px;
+}
+
+.srkqp-single-button-wrap {
+    margin: 18px 0 22px;
+}
+
+.srkqp-single-btn {
+    padding: 14px 24px;
+    font-size: 16px;
+}
+
+/* Popup */
+.srkqp-popup {
+    display: none;
+}
+
+.srkqp-popup.srkqp-active {
+    display: block;
+}
+
+.srkqp-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(17, 24, 39, .68);
+    z-index: 999998;
+    backdrop-filter: blur(3px);
+}
+
+.srkqp-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 460px;
+    max-width: calc(100vw - 28px);
+    max-height: calc(100vh - 28px);
+    overflow-y: auto;
+    transform: translate(-50%, -50%);
+    z-index: 999999;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 25px 80px rgba(0,0,0,.32);
+    padding: 24px;
+}
+
+.srkqp-close {
+    position: absolute;
+    top: 5px;
+    right: 14px;
+    border: 0;
+    background: #c47f20;
+    width: 34px;
+    height: 34px;
+    border-radius: 50% !important;
+    font-size: 23px;
+    cursor: pointer;
+    line-height: 1.2em;
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.srkqp-product-card {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    background: #f9fafb;
+    border: 1px solid #eef0f3;
+    border-radius: 14px;
+    padding: 12px;
+    margin-bottom: 18px;
+}
+
+.srkqp-product-card img {
+    width: 82px;
+    height: 82px;
+    border-radius: 12px;
+    object-fit: cover;
+    background: #eee;
+}
+
+.srkqp-eyebrow {
+    margin: 0 0 4px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: #9ca3af;
+    font-weight: 800;
+}
+
+#srkqp-product-name {
+    margin: 0 0 6px;
+    font-size: 17px;
+    color: #111827;
+}
+
+#srkqp-product-link {
+    color: #b7791f;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+#srkqp-title {
+    margin: 0 0 6px;
+    font-size: 25px;
+    color: #111827;
+}
+
+.srkqp-subtitle {
+    margin: 0 0 18px;
+    color: #6b7280;
+}
+
+#srkqp-form label {
+    display: block;
+    font-weight: 700;
+    color: #374151;
+    margin-bottom: 12px;
+    font-size: 13px;
+    padding: 0em 0 0rem;
+}
+
+#srkqp-form input,
+#srkqp-form textarea {
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+	font-weight: 400;
+}
+
+.srkqp-submit {
+    width: 100%;
+    border: 0;
+    background: #111827;
+    color: #fff;
+    padding: 14px;
+    border-radius: 50px !important;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.srkqp-submit:hover {
+    background: #c47f20;
+}
+
+.srkqp-response {
+    margin-top: 12px;
+    font-weight: 700;
+}
+
+.srkqp-response.success {
+    color: #166534;
+}
+
+.srkqp-response.error {
+    color: #b91c1c;
+}
+
+
+/* Single product forced quote button area */
+.srkqp-single-button-wrap {
+    display: block !important;
+    width: 100%;
+    margin: 18px 0 24px !important;
+    clear: both;
+}
+
+.srkqp-js-injected-btn,
+.srkqp-single-button-wrap .srkqp-single-btn {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 2;
+}
+
+/* Optional: hide existing theme contact/add-cart style CTA when quote system is active */
+.single-product .single_add_to_cart_button,
+.single-product button[name="add-to-cart"],
+.single-product .quantity,
+.single-product form.cart,
+.single-product .cart {
+    display: none !important;
+}
+
+
+/* v1.3 Elementor single product mode:
+   No automatic single quote button is printed. Use shortcode [srk_quote_button]. */
+.single-product .price,
+.single-product .amount,
+.single-product .woocommerce-Price-amount,
+.single-product .woocommerce-variation-price,
+.single-product .woocommerce-variation-add-to-cart,
+.single-product form.cart,
+.single-product .cart,
+.single-product .quantity,
+.single-product .single_add_to_cart_button,
+.single-product button[name="add-to-cart"],
+.single-product .add_to_cart_button,
+.single-product .product_type_simple,
+.single-product .product_type_variable,
+.single-product .variations_form,
+.single-product table.variations {
+    display: none !important;
+}
+
+/* Elementor shortcode button alignment */
+.elementor-shortcode .srkqp-quote-btn,
+.srkqp-single-btn {
+    display: inline-flex !important;
+    width: auto !important;
+}

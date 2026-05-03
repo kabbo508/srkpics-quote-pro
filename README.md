@@ -1,4 +1,4 @@
-# SRK Pics Quote Pro v1.3.0
+# SRK Pics Quote Pro v1.3.3
 
 ## Important change
 Single product pages are now Elementor-shortcode mode.
@@ -39,3 +39,14 @@ Optional fixed product ID:
 - Date/status filters
 - CSV export
 - Live activity log
+
+
+## v1.3.3 Patch Notes
+- Patched the original full plugin, not a simplified replacement.
+- Fixed quote submission for non-logged users.
+- Added guest-safe public validation with honeypot and basic IP rate limit.
+- Improved frontend AJAX error handling.
+- Added database insert failure logging.
+- Added Delete button in Quote Requests admin table.
+- Added AJAX delete action with confirmation.
+- Delete actions are written to Activity Log.
